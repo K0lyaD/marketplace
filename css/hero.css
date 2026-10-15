@@ -1,0 +1,14 @@
+.hero {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.hero h1 {
+  color: rgb(183, 181, 251);
+}
+
+.hero p {
+  color: rgb(160, 171, 194);
+  text-align: center;
+}
+

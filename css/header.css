@@ -1,0 +1,88 @@
+header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 15px 30px;
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+.logo img {
+  display: block;
+}
+
+/* Притискаємо навігацію та контакти вправо */
+.navigation {
+  margin-left: auto;
+}
+
+.navigation ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  display: flex;
+  align-items: center;
+}
+
+/* Розділювачі між пунктами меню */
+.navigation li + li::before {
+  content: "|";
+  margin: 0 16px;
+  color: rgb(160, 171, 194);
+}
+
+.navigation a,
+.address a {
+  display: inline-block;
+  color: rgb(126, 233, 245);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+/* Наведення та фокус */
+.navigation a:hover,
+.navigation a:focus,
+.address a:hover,
+.address a:focus {
+  color: #e65100;
+}
+
+/* Помітний фокус під час навігації клавіатурою */
+.navigation a:focus-visible,
+.address a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 5px;
+  border-radius: 2px;
+}
+
+/* Колір під час натискання */
+.navigation a:active,
+.address a:active {
+  color: #b71c1c;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-style: normal;
+  white-space: nowrap;
+}
+
+/* Розділювач перед контактами */
+.address::before {
+  content: "|";
+  color: rgb(160, 171, 194);
+}
+
+.address p {
+  margin: 0;
+}
